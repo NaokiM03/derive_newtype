@@ -1,0 +1,17 @@
+[package]
+name = "derive_newtype"
+version = "0.1.0"
+edition = "2021"
+authors = ["NaokiM03"]
+description = "This derive macro provides Deref, DerefMut, and From for the newtype pattern."
+keywords = ["macro", "derive", "newtype"]
+repository = "https://github.com/NaokiM03/derive_newtype"
+license = "MIT"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.92", features = ["full"] }
+quote = "1.0.18"
+proc-macro2 = "1.0.37"
